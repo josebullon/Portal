@@ -1,0 +1,194 @@
+
+      html, 
+      body
+      {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        background: url(../../img/clasico.jpg);
+        background-size: cover;
+        overflow: auto;
+        text-align: center;
+        font-family: "Trebuchet MS";
+      }
+      
+      * 
+      { box-sizing: border-box; }
+      
+      #clock-wrapper
+      {
+        width: 320px;
+        height: 320px;
+        background: #f6f6f8;
+        border-radius: 50%;
+        position: relative;
+        margin: 70px auto 70px auto;
+        border: 10px outset rgb(197, 200, 207);
+        box-shadow: 5px 5px 10px #161616;
+      }
+      
+      span,
+      #clock-center,
+      #clock-second,
+      #clock-minute,
+      #clock-hour,
+      #inner-circle
+      {
+        display: inline-block;
+        position: absolute;
+      }
+      
+      #clock-center
+      {
+        height: 15px;
+        width: 15px;
+        margin: auto;
+        background: #121313;
+        top: 142.5px;
+        left: 143px;
+        border-radius: 50%;
+        z-index: 5;
+      }
+      
+      #clock-second
+      {
+        width: 1px;
+        height: 130px;
+        background: rgb(218, 9, 9);
+        top: 19px;
+        left: 150px;
+        z-index: 4;
+        border-radius: 0.5px;
+      }
+      
+      #clock-minute
+      {
+        width: 3.5px;
+        height: 127.5px;
+        background: #121313;
+        top: 22px;
+        left: 149px;
+        z-index: 3;
+        border-radius: 1.75px;
+      }
+      
+      #clock-hour
+      {
+        width: 5.5px;
+        height: 85px;
+        background: rgb(37, 214, 6);
+        top: 64.5px;
+        left: 148px;
+        border-radius: 2.75px;
+        z-index: 2;
+      }
+      
+      #clock-second,
+      #clock-minute,
+      #clock-hour
+      {
+        -webkit-transform: rotate(0deg);
+        -webkit-transform-origin: 50% 100%;
+        -webkit-transition: -webkit-transform 0.75s;
+        transform: rotate(0deg);
+        transform-origin: 50% 100%;
+        transition: transform 0.75s;
+      }
+      
+      .digits
+      {
+        width: 3px;
+        height: 18px;
+        background: rgb(37, 214, 6);
+        border-radius: 1.5px;
+        z-index: 2;
+      }
+      
+      .displayed-digits
+      {
+        color: rgb(15, 7, 7);
+        font-weight: bolder;
+        font-size: 22px;
+        font-family: Sans;
+        z-index: 0;
+      }
+      
+      span:nth-of-type(1)
+      {
+        top: 16px;
+        left: 138px;
+      }
+      
+      span:nth-of-type(2)
+      {
+        top: 137px;
+        right: 20px;
+      }
+      
+      span:nth-of-type(3)
+      {
+        bottom: 18px;
+        left: 144px;
+      }
+      
+      span:nth-of-type(4)
+      {
+        top: 137px;
+        left: 22px;
+      }
+      
+      #inner-circle
+      {
+        top: 39px;
+        left: 40px;
+        width: 220px;
+        height: 220px;
+        border: 2px solid rgb(143, 26, 6);
+        border-radius: 50%;
+      }
+      
+      .mini-digits
+      {
+        width: 1.5px;
+        height: 6px;
+        border-radius: 0.75px;
+        background: rgb(14, 6, 6);
+      }
+      
+      #am-pm
+      {
+        left: 130px;
+        top: 170px;
+        color: rgb(20, 158, 15);
+        background: rgb(147, 147, 197);
+        padding: 3px 10px;
+        border-radius: 3px;
+        z-index: 0;
+        font-weight: bolder;
+        font-size: 85%;
+        letter-spacing: 2px;
+      }
+      
+      #my-name         
+      { 
+        display: inline-block; 
+        background: #333; 
+        padding: 7px 13px;
+        position: relative;
+        border-radius: 20px;
+        font-size: 80%;
+        color: #777;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+

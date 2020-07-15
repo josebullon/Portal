@@ -1,0 +1,47 @@
+#fondo {
+    background-size: cover;
+    background-repeat: no-repeat;
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    opacity: 0.6;
+}
+#fondo:before {
+    content:'';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 8, 20, 0.6);
+}
+#fondo h1 {
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    position: relative
+}
+header {
+    font-family: Shadows Into Light;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color:#767408;
+    color:white;
+    padding:0;
+    width:30%;
+    margin:15% auto 0%;
+    border-radius:20px 20px 0 0px;
+}
+#clock {
+    background-color:black;
+    color:white;
+    width: 30%;
+    margin: 0 auto;
+    font-size: 60px;
+    padding:0.5em 0em;
+    text-align: center;
+    font-family: jua;
+    border-radius: 0 0 20px 20px;
+}

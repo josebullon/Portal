@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  --primary: #263d42;
+  border: 1px solid var(--primary);
+  transition: 0.2s;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+div span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-container .icon-circle {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border-radius: inherit;
+  transition: 0.2s;
+}
+
+.icon-text {
+  width: 30px;
+  height: 30px;
+  border: none;
+  font-size: 1rem;
+  border-radius: inherit;
+  color: var(--primary);
+}
+
+.icon-container:hover {
+  transform: scale(1.2);
+}
+
+.icon-container:nth-of-type(1):hover {
+  --primary: #4267b2;
+}
+
+.icon-container:nth-of-type(2):hover {
+  --primary: #1da1f2;
+}
+
+.icon-container:nth-of-type(3):hover {
+  --primary: #c4302b;
+}
+
+.icon-container:nth-of-type(4):hover {
+  --primary: #833ab4;
+}
+
+.icon-container:nth-of-type(4):hover .icon-text {
+  background: linear-gradient(to bottom, #833ab4, #c13584);
+}
+
+.icon-container:hover .icon-circle {
+  animation: around 0.2s infinite;
+  border: 1px dashed var(--primary);
+}
+
+.icon-container:hover .icon-text {
+  background: var(--primary);
+  color: white;
+}
+
+.icon-text {
+  z-index: 100;
+}
+
+@keyframes around {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

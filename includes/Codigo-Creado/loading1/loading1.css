@@ -1,0 +1,46 @@
+body {
+  background:#ffffff;
+}
+.container-load {
+  transform: translate(-50%,80%);
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  position:absolute  ;
+  top:20%;
+  left:50%;
+  animation:colorize 1s ease infinite; 
+  overflow:hidden;
+}
+
+@keyframes colorize {
+  20% { filter:hue-rotate(72deg); }
+  40% { filter:hue-rotate(144deg); }
+  60% { filter:hue-rotate(216deg); }
+  80% { filter:hue-rotate(288deg); }
+  100% { filter:hue-rotate(360deg); }
+}
+
+.loader {
+  width:calc(100% - 12px);
+  height:calc(100% - 12px);
+  position:absolute;
+  border:5px solid #000000;
+  border-top:10px solid #0099ff;
+  border-radius:50%;
+  animation-fill-mode: forwards;
+  animation:rotate 5s 0.5s linear infinite;
+}
+@keyframes rotate {
+  0% { transform: skew(360deg); }
+  10% { transform: skew(330deg); }
+  20% { transform: skew(300deg); }
+  30% { transform: rotate(270deg); }
+  40% { transform: rotate(240deg); }
+  50% { transform: rotate(210deg); }
+  60% { transform: rotate(180deg); }
+  70% { transform: rotate(150deg); }
+  80% { transform: skew(120deg); }
+  90% { transform: skew(90deg); }
+  100% { transform: skew(0deg); }
+}

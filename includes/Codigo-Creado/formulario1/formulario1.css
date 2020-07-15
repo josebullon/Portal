@@ -1,0 +1,185 @@
+*,*::before,*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 50.5%;
+}
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 72.5%; 
+  } 
+}
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 70.5%; 
+  } 
+}
+body {
+  position:relative;
+  width:98%;
+  z-index:-1;
+  height:100vh;
+  background-image:url("fondo.png");
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  text-align: center; 
+}
+.form {
+  background-color: rgb(255, 255, 255);
+  width: 35rem;
+  height: 62rem;
+  display: inline-block;
+  border-radius: 0.8rem;
+  margin-top: 2rem;
+  text-align: left;
+  box-shadow: 0 0.8rem 3rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+.form__image-box {
+  width: 100%;
+  height: 20rem;
+  background-image: linear-gradient(to right bottom, rgba(127, 199, 228, 0.8), rgba(244, 240, 247, 0.8)), url(images.jpg);
+  background-size: cover,38rem 38rem;
+  background-position: 0, 0 -15rem;
+  border-radius: 0.8rem 0.8rem 35% 35%;
+  text-align: center;
+  position: relative; 
+}
+.form__image-box__icon {
+  height: 10rem;
+  display: inline;
+  margin-top: 2.3rem;
+}
+.form__image-box__heading {
+  color: rgb(3, 10, 39);
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.2rem; 
+}
+.form__fields {
+  margin: 0 3rem;
+}
+.form__fields__heading {
+  font-size: 2rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  color: rgb(6, 5, 56);
+  margin: -1rem 0 1.2rem 0; 
+}
+.form__fields__heading:not(.radio-heading) {
+  margin: 1.2rem 0 0.2rem 0; 
+}
+.form__fields .form-field {
+  width: 100%;
+  margin: 0.5rem 0;
+  border: none;
+  border-bottom: 0.2rem solid rgb(7, 101, 138);
+  font-size: 1.55rem;
+  outline: none; 
+}
+.form__fields .text-field {
+  padding: 0.5rem 0.5rem; 
+}
+.form__fields .text-field:focus::placeholder {
+  transform: translateX(150%); 
+}
+.form__fields .user-field {
+  padding: 0.5rem 7.7rem;
+  position: relative; 
+}
+.form__fields .user-field:focus::placeholder {
+  transform: translateX(180%); 
+}
+.form__fields .user-field-label {
+  font-size: 1.8rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  color: rgb(106, 106, 106);
+  position: relative;
+  bottom: 3.2rem;
+  left: 0.5rem; 
+}
+.form__fields .btn {
+  display: block;
+  text-decoration: none;
+  width: 80%;
+  margin: 2rem 3rem;
+  padding: 1.35rem 0;
+  background-color: rgb(7, 101, 138);
+  color: rgb(255, 255, 255);
+  border-radius: 10rem;
+  transition: 0.5s;
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-align: center;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2); 
+}
+.form__fields .btn:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0.5rem 3.5rem rgba(0, 0, 0, 0.2);
+}
+.form__fields .btn:active {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+.form__fields .form-radio {
+  -webkit-appearance: none;
+}
+.form__fields .form-radio:hover + label {
+  background-color: rgb(246, 246, 246);
+}
+.form__fields .form-radio:checked + label {
+  border-color: rgb(7, 101, 138);
+  color: rgb(7, 101, 138); 
+}
+.form__fields .radio-label {
+  border: 0.2rem solid rgb(183, 183, 183);
+  display: inline-block;
+  height: 10rem;
+  width: 14rem;
+  border-radius: 0.5rem;
+  position: relative;
+  color: rgb(183, 183, 183);
+}
+.form__fields .radio-label > .fa {
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+}
+.form__fields .radio-label > span {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 80%);
+}
+.form__fields ::placeholder {
+  transition: all 2s;
+  font-size: 1.55rem;
+  color: rgb(157, 157, 157);
+}
+.link-yt {
+  display: inline-block;
+  text-decoration: none;
+  width: 35rem;
+  font-size: 2rem;
+  text-align: center;
+  margin: 1.5rem 0 3rem 0;
+  padding: 1.35rem 0;
+  border-radius: 0.3rem;
+  background-color: rgb(7, 101, 138);
+  color: rgb(19, 6, 136);
+  font-family: "Poppins", sans-serif; 
+}

@@ -1,0 +1,111 @@
+body{
+    position:relative;
+    width:98%;
+    z-index:-1;
+    height:90vh;
+    background-image:url("fondo.png");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+#contenedor{
+    height: 520px;
+    width:300px;
+    border-radius: 40px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right:0;
+    margin:auto;
+    background:rgb(255, 255, 255);
+    box-shadow:  13px 13px 20px rgb(203, 206, 209),
+                -13px -13px 20px rgb(255, 255, 255);
+                text-align: center;
+}
+#imagenusuario{
+    background:url("yokeissa.ico");
+    background-size: cover;
+    height:100px;
+    width: 100px;
+    margin-left: 90px;
+    margin-top: 10px;
+    border-radius: 50%;
+    box-shadow:  9px 9px 20px rgb(203, 206, 209),
+                -9px -9px 20px rgb(255, 255, 255);
+}
+input{
+    height:30px;
+    width:250px;
+    margin-top:50px;
+    outline: none;
+    border:none;
+    background:none;
+    box-shadow: inset 8px 8px 8px rgb(203, 206, 209),
+                inset -8px -8px 8px rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 5px;
+
+}
+.btn{
+    width:250px;
+    height:40px;
+    border-radius: 10px;
+    outline:none;
+    border:none;
+    font-size: 20px;
+    background:rgb(81, 197, 240);
+    box-shadow:  3px 3px 8px rgb(205, 206, 209),
+                -3px -3px 8px rgb(255, 255, 255);
+    margin-top:40px;
+    padding: 5px;
+}
+.btn:hover{
+    box-shadow: inset 8px 8px 8px rgb(203, 206, 209),
+                inset -3px -3px 8px rgb(255, 255, 255);
+}
+#link a{
+    text-decoration: none;
+    font-size: 17px;
+    color:rgb(15, 1, 1);    
+}
+#link{
+    margin-top: 10px;
+    font-size: 20px;
+}
+#social{
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size:35px;
+}
+i{
+    float:left;
+    text-align: center;
+    margin: 10px;
+    border-radius: 40%;
+    height:45px;
+    width:47px;
+    box-shadow:  13px 13px 20px rgb(203, 206, 209),
+                -13px -13px 20px rgb(255, 255, 255);
+}
+.fa-twitter{
+    color:rgb(81, 197, 240);    
+}
+.fa-instagram{
+    color:rgb(81, 197, 240);
+}
+.fa-youtube{
+    color:rgb(81, 197, 240);
+}
+.fa-whatsapp{
+    color:rgb(81, 197, 240);
+}
+i:hover{
+    box-shadow: inset 8px 8px 8px rgb(203, 206, 209),
+                inset -3px -3px 8px rgb(255, 255, 255);
+}
+.fa{
+    padding-top:10px;
+}

@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Digital-7';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/184191/Digital-7.eot?#iefix') format('embedded-opentype'),
+        url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/184191/Digital-7.woff') format('woff'),
+        url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/184191/Digital-7.ttf')  format('truetype'),
+        url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/184191/Digital-7.svg#Digital-7') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background-image: url(../../img/ASW-G-08-Barbatos.jpg);    
+	padding: 600px 200px;
+	text-align: center;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+body:before {
+	content:'';
+	position: absolute;
+        top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.9);
+}
+@-webkit-keyframes color {
+    0% {
+        color: #2982ff;
+        text-shadow: 0px 0px 5px #000;
+    }
+    50% {
+        color: #cc4343;
+        text-shadow: 0px 0px 5px #ff0000;
+    }
+}
+@keyframes color {
+    0% {
+        color: #2982ff;
+        text-shadow: 0px 0px 5px #000;
+    }
+    50% {
+        color: #cc4343;
+        text-shadow: 0px 0px 5px #ff0000;
+    }
+}
+div[class*='mp'] {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    text-align: center;
+    text-weight: bold;
+    line-height: 100px;
+    font-size: 5rem;
+    font-family: 'Digital-7', sans-seift;
+}
+.box-clock {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transform: perspective(1000px) rotateX(-45deg) rotateY(-45deg) translateX(-100%) translateY(-100%);
+            transform: perspective(1000px) rotateX(-45deg) rotateY(-45deg) translateX(-100%) translateY(-100%);
+    -webkit-animation: color 10s infinite;
+            animation: color 10s infinite;
+    color: #2982FF;
+    text-shadow: 0px 0px 5px #000;
+}
+.mp-1 {
+    background: #111;
+}
+.mp-2 {
+    -webkit-transform-origin: left center;
+        -ms-transform-origin: left center;
+            transform-origin: left center;
+    -webkit-transform: translateX(100%) rotateY(90deg);
+            transform: translateX(100%) rotateY(90deg);
+    background: #151515;
+    border-left: 0;
+}
+.mp-3 {
+    -webkit-transform-origin: center bottom;
+        -ms-transform-origin: center bottom;
+            transform-origin: center bottom;
+    -webkit-transform: translateY(-100%) rotateX(90deg);
+            transform: translateY(-100%) rotateX(90deg);
+    background: #222;
+    border-right: 0;
+    border-bottom: 0;
+}
+.rotate-90 {
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transform-origin: initial;
+        -ms-transform-origin: initial;
+            transform-origin: initial;
+    display: block;
+}

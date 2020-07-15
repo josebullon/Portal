@@ -1,0 +1,93 @@
+html, body{
+   height: 100%; 
+}
+body {
+   background-color: black;
+   color: white;
+   font-size: 20px;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+#thanks{
+   font-size: 10px; 
+}
+section{
+   height: 200px; 
+}
+/* Animacion */
+#one, #two, #three, #four
+{
+   margin: auto;
+   display: flex;
+   border-radius: 10px;
+   animation: animationIn 5s infinite linear;
+}
+#one{
+   background-color: white;
+   width: 125px;
+   height: 125px;
+   animation: animationOne 6s infinite linear;
+}
+#two, #four{
+   background-color: black;
+}
+#three{
+   background-color: white;
+}
+@keyframes animationOne{
+   0%{
+      transform: rotate(0deg);
+   }
+   100%{
+      transform: rotate(360deg); 
+   }
+}
+@keyframes animationIn{
+   0%{
+      transform: rotate(0deg);
+      width: 60%;
+      height: 60%;
+   }
+   40%, 60%{
+      width: 90%;
+      height: 90%;
+   }
+   100%{
+      transform: rotate(360deg);
+      width: 60%;
+      height: 60%;
+   }
+}
+/*Animacion dots*/
+#dots{
+   margin: auto;
+   display: flex; 
+   justify-content: space-around;
+   width: 20%;
+}
+#dots div{
+   width: 10px;
+   height: 10px;
+   background-color: white; 
+   border-radius: 10px;
+   animation: dotsAnimation linear 1s infinite;
+}
+#dots div:nth-child(2){
+   animation-delay: 0.2s;
+}
+#dots div:nth-child(3){
+   animation-delay: 0.4s; 
+}
+@keyframes dotsAnimation{
+   0%{
+      transform: scale(1);
+   }
+   50%{
+      transform: scale(1.6);
+   }
+   100%{
+      transform: scale(1); 
+   }
+}
